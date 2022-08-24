@@ -1,4 +1,4 @@
-## Hvordan laste ned prosjektet:
+## Hvordan laste ned koden:
 
 * Trykk på den grønne "Code"-knappen oppe til høyre på GitHub
 * Velg `Download ZIP`
