@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To Intro</title>
+</head>
+<body>
+    <script>
+        
+        // Hello World, alert() vs console.log()
+        alert("Hello World!");
+        console.log("Hello World!");
+
+        // Variables
+        var hello = "Hello World!";
+        console.log(hello);
+
+        // Undefined variables
+        var something;
+        console.log(something);
+
+        // Changing variable values
+        something = "Not nothing";
+        console.log(something);
+        something = "Stuff";
+        console.log(something);
+
+        // Number datatype, camelCase
+        var nice = 69;
+        var blazeIt = 4.20;
+        var negative = -500;
+        console.log(nice);
+
+        // Math
+        var sum = nice + blazeIt + negative;
+        console.log(sum);
+        
+        // Changing variable values using old values
+        nice = nice + 1;
+        console.log(nice);
+        nice = nice - 1;
+
+        // String datatype
+        var text = "Student";
+        var moreText = "forening";
+
+        // String concatenation
+        console.log(text + moreText);
+
+        // Quotes in Strings
+        var stringWithQuotes = "The variable 'text' contains the string 'Student'";
+        console.log(stringWithQuotes);
+        var otherStringWithQuotes = 'The variable "nice" conteins the number 69';
+        console.log(otherStringWithQuotes);
+
+        // Strings with line break
+        var stringWithLineBreak = "First line\nSecond line";
+        console.log(stringWithLineBreak);
+
+        // Using toUpperCase()
+        var calm = "I don't work here";
+        var angry = calm.toUpperCase();
+        console.log(angry);
+
+        // Using toLowerCase()
+        var loud = "PLEASE BE QUIET";
+        var quiet = loud.toLowerCase();
+        console.log(quiet);
+
+        // Boolean datatype
+        var youGuysAreSuperCool = true;
+        var youGuysSuck = false;
+        console.log(youGuysAreSuperCool);
+        console.log(youGuysSuck);
+
+        // Boolean math
+        console.log(youGuysAreSuperCool + youGuysSuck);
+        console.log(true + true);
+        console.log(false + false);
+
+        // Difference between String and Number datatypes
+        var niceString = "69";
+        console.log(nice + nice);
+        console.log(niceString + niceString);
+        console.log(nice + niceString);
+
+        // Converting String to Number using Number()
+        var niceStringAsNumber = Number(niceString);
+        console.log(niceStringAsNumber);
+        console.log(niceStringAsNumber + niceStringAsNumber);
+
+        // Converting String to Number using parseInt()
+        var niceStringAsNumberAlternative = parseInt(niceString);
+        console.log(niceStringAsNumberAlternative);
+        console.log(niceStringAsNumberAlternative + niceStringAsNumberAlternative);
+
+        // Converting non-numerical String to Number
+        var numberText = "thirteen";
+        var numberTextAsNumber = Number(numberText);
+        console.log(numberTextAsNumber);
+        var numberTextAsNumber2 = parseInt(numberText);
+        console.log(numberTextAsNumber2);
+
+        // Converting Number to String
+        var blazeItAsString = blazeIt.toString();
+        console.log(blazeItAsString);
+        console.log(blazeItAsString + blazeItAsString);
+
+        // Converting Boolean to Number
+        var trueBoolean = true;
+        var booleanAsNumber = Number(trueBoolean);
+        console.log(booleanAsNumber);
+        var booleanAsNumberWithParseInt = parseInt(trueBoolean);
+        console.log(booleanAsNumber);
+
+        // Converting Boolean to String
+        var someBoolean = false;
+        var booleanAsString = someBoolean.toString();
+        console.log(booleanAsString + booleanAsString);
+
+        // Converting String or Number to Boolean
+        // Don't
+
+        // Adding Boolean to Number or String
+        var falseString = "false";
+        console.log(someBoolean + nice);
+        console.log(someBoolean + falseString);
+
+        // Hardcoded
+        console.log(
+            "My name is Roman\n" +
+            "I'm 31 years old\n" +
+            "If said pineapple belongs on pizza, I't say that's false"
+        );
+        
+        // Softcoded
+        var name = "Roman"; // Change to Argyle
+        var age = 31; // Change to 18
+        var pineappleOnPizza = false; // Change to true
+        console.log(
+            "My name is " + name +
+            "\nI'm " + age + " years old" +
+            "\nIf said pineapple belongs on pizza, I't say that's " + pineappleOnPizza
+        );
+
+        // Messing up datatypes
+        var wtf = ("b" + "a"+ + "a" + "a").toLowerCase();
+        console.log(wtf);
+        // JavaScript is weird
+
+    </script>
+</body>
+</html>
