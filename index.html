@@ -86,43 +86,6 @@
         console.log(niceString + niceString);
         console.log(nice + niceString);
 
-        // Converting String to Number using Number()
-        var niceStringAsNumber = Number(niceString);
-        console.log(niceStringAsNumber);
-        console.log(niceStringAsNumber + niceStringAsNumber);
-
-        // Converting String to Number using parseInt()
-        var niceStringAsNumberAlternative = parseInt(niceString);
-        console.log(niceStringAsNumberAlternative);
-        console.log(niceStringAsNumberAlternative + niceStringAsNumberAlternative);
-
-        // Converting non-numerical String to Number
-        var numberText = "thirteen";
-        var numberTextAsNumber = Number(numberText);
-        console.log(numberTextAsNumber);
-        var numberTextAsNumber2 = parseInt(numberText);
-        console.log(numberTextAsNumber2);
-
-        // Converting Number to String
-        var blazeItAsString = blazeIt.toString();
-        console.log(blazeItAsString);
-        console.log(blazeItAsString + blazeItAsString);
-
-        // Converting Boolean to Number
-        var trueBoolean = true;
-        var booleanAsNumber = Number(trueBoolean);
-        console.log(booleanAsNumber);
-        var booleanAsNumberWithParseInt = parseInt(trueBoolean);
-        console.log(booleanAsNumber);
-
-        // Converting Boolean to String
-        var someBoolean = false;
-        var booleanAsString = someBoolean.toString();
-        console.log(booleanAsString + booleanAsString);
-
-        // Converting String or Number to Boolean
-        // Don't
-
         // Adding Boolean to Number or String
         var falseString = "false";
         console.log(someBoolean + nice);
@@ -131,21 +94,42 @@
         // Hardcoded
         console.log(
             "My name is Roman\n" +
-            "I'm 31 years old\n" +
+            "I'm 32 years old\n" +
             "If said pineapple belongs on pizza, I't say that's false"
         );
         
         // Softcoded
         var name = "Roman"; // Change to other string
-        var age = 31; // Change to other number
-        var pineappleOnPizza = false; // Change to false
+        var age = 32; // Change to other number
+        var pineappleOnPizza = false; // Change to true
         console.log(
             "My name is " + name +
             "\nI'm " + age + " years old" +
             "\nIf said pineapple belongs on pizza, I't say that's " + pineappleOnPizza
         );
 
-        // Messing up datatypes
+        // Using prompt()
+        prompt("Skriv inn noe her:");
+        var userInput = prompt("Skriv inn noe som faktisk kommer til å bli lagret:");
+        console.log(userInput);
+
+        // Using if
+        var myName = "Roman";
+        var nameToCheck = prompt("Skriv inn fornavnet ditt:");
+        if (nameToCheck == myName) {
+            console.log("Vi har samme navn!");
+        }
+
+        // Using if and else
+        var myLastName = "Morso";
+        var lastNameToCheck = prompt("Skriv inn etternavnet ditt:");
+        if (lastNameToCheck == myLastName) {
+            console.log("Vi har samme etternavn!");
+        } else {
+            console.log("Kult! Etternavnet mitt er " + myLastName + "!");
+        }
+
+        // Messing with datatypes
         var wtf = ("b" + "a"+ + "a" + "a").toLowerCase();
         console.log(wtf);
         // JavaScript is weird
